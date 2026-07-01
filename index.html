@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Children High School | Learn, Lead, Shine</title>
-  <meta name="description" content="Star Children High School, Palwancha. Learn, Lead, Shine. Admissions Open from LKG to 10th Class, and NIOS Open School (Open 10th &amp; Open Intermediate).">
+  <meta name="description" content="Star Children High School, Palwancha. Learn, Lead, Shine. Admissions Open from Nursery to 10th Class.">
 
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -104,9 +104,9 @@
     /* Hero Background Overlay */
     .hero-bg {
       background:
-        linear-gradient(rgba(8, 28, 54, 0.85), rgba(8, 28, 54, 0.9)),
+        linear-gradient(rgba(8, 28, 54, 0.5), rgba(8, 28, 54, 0.7)),
         /* REPLACE_IMAGE: Hero background image (replace https://placehold.co/1920x1080/081C36/FFFFFF?text=Star+Children+High+School+Banner with your school banner) */
-        url('main.jpg');
+        url('school_hero.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -155,7 +155,7 @@
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
         <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
       </span>
-      <span>🔔 <strong class="font-heading">Admissions Open 2026-27:</strong> Regular Schooling (LKG to 10th) &amp; NIOS Open School (10th &amp; Inter).</span>
+      <span>🔔 <strong class="font-heading">Admissions Open 2026-27:</strong> Regular Schooling (Nursery to 10th Class).</span>
     </div>
     <a href="#admission" class="underline hover:text-primary transition-colors duration-200">Apply Now</a>
     <button id="closeBannerBtn" class="absolute right-4 md:right-6 text-white text-lg font-bold hover:opacity-80 focus:outline-none" aria-label="Close Announcement">
@@ -165,8 +165,8 @@
 
   <!-- ── Welcome Alert Toast ── -->
   <div id="welcomeToast" class="fixed top-24 right-6 z-[999] bg-white text-slate-900 px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-slate-100 transition-all duration-500 max-w-sm translate-x-80 opacity-0 pointer-events-none">
-    <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 border border-primary/20">
-      <i class="fas fa-sparkles text-lg animate-pulse"></i>
+    <div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center flex-shrink-0 border border-primary/20">
+      <img src="logo.jpeg" alt="Star Children High School Logo" class="w-full h-full object-cover" />
     </div>
     <div class="flex-grow pr-4">
       <h5 class="font-bold text-sm font-heading text-primary">Welcome to Our Campus!</h5>
@@ -245,10 +245,6 @@
         <!-- Left Content -->
         <div class="lg:col-span-7 space-y-8 fade-up show text-left">
           
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
-            <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-slate-200">Admissions Open 2026-27</span>
-          </div>
 
           <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] font-heading">
             Nurturing Minds <br>
@@ -286,7 +282,7 @@
               
               <div class="h-64 rounded-3xl overflow-hidden relative group">
                 <img 
-                  src="main.jpg" 
+                  src="school_hero.jpg" 
                   alt="Star Children High School Building" 
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200'"
@@ -300,11 +296,11 @@
               <div class="space-y-4">
                 <div class="flex items-center gap-3 bg-white/5 p-3.5 rounded-2xl border border-white/5">
                   <div class="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-child animate-pulse"></i>
                   </div>
                   <div>
-                    <h5 class="text-white font-bold text-sm font-heading">NIOS Open School Services</h5>
-                    <p class="text-slate-400 text-xs">Flexible admissions for Open 10th &amp; Inter</p>
+                    <h5 class="text-white font-bold text-sm font-heading">Nursery to 10th Class</h5>
+                    <p class="text-slate-400 text-xs">Empowering young minds with holistic learning</p>
                   </div>
                 </div>
 
@@ -342,7 +338,7 @@
           <p class="text-slate-600 text-sm font-semibold">Students</p>
         </div>
         <div class="text-center space-y-2 border-r border-slate-100 last:border-0">
-          <h3 class="text-4xl md:text-5xl font-extrabold text-secondary font-heading"><span class="counter" data-target="50">0</span>+</h3>
+          <h3 class="text-4xl md:text-5xl font-extrabold text-secondary font-heading"><span class="counter" data-target="25">0</span>+</h3>
           <p class="text-slate-600 text-sm font-semibold">Staff Members</p>
         </div>
         <div class="text-center space-y-2 last:border-0">
@@ -363,7 +359,7 @@
           <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-2xl"></div>
           <div class="bg-gradient-to-tr from-white/10 to-white/5 p-1 rounded-[2.5rem] border border-slate-200/50 shadow-2xl bg-white">
             <img 
-              src="main.jpg" 
+              src="school_hero.jpg" 
               alt="School Building" 
               class="rounded-[2.2rem] w-full object-cover shadow-2xl h-[28rem] hover:scale-[1.02] transition-transform duration-500"
               onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200'"
@@ -414,7 +410,7 @@
       <div class="text-center max-w-2xl mx-auto space-y-4 mb-20 fade-up">
         <span class="text-primary text-xs font-bold uppercase tracking-widest bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20">Programs</span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 font-heading">Academic Pathways</h2>
-        <p class="text-slate-500">We offer a robust and adaptive learning path covering early education to secondary schooling, including open school support.</p>
+        <p class="text-slate-500">We offer a robust and adaptive learning path covering early education to secondary schooling.</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -487,108 +483,120 @@
 
       </div>
 
-      <!-- ── Open School Education (TOSS & NIOS) Details Section ── -->
-      <div class="mt-20 bg-slate-50 border border-slate-200/60 shadow-xl rounded-[2.5rem] p-8 md:p-12 fade-up">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <!-- Details Column -->
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary">
-              <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
-              <span class="text-xs font-bold uppercase tracking-wider font-heading">Open School Education</span>
-            </div>
-            
-            <h3 class="text-3xl font-extrabold text-slate-900 font-heading leading-tight">
-              Telangana Open School Society (TOSS) &amp; <br>National Institute of Open Schooling (NIOS)
-            </h3>
-            
-            <p class="text-slate-600 leading-relaxed text-sm">
-              Star Children High School assists students with flexible admission pathways under recognized state and national open schooling boards. Get verified registrations, guidelines, and study support to complete your education.
-            </p>
+      <!-- ── Open School Education ── -->
+      <div class="mt-20 pt-16 border-t border-slate-100 fade-up">
+        <div class="bg-gradient-to-br from-slate-900 to-darknavy text-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+          <!-- Decorative shapes -->
+          <div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
 
-            <div class="grid sm:grid-cols-2 gap-6 pt-2">
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20 mt-0.5">
+          <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-left">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-primary">Open Schooling</span>
+              </div>
+              <h3 class="text-3xl md:text-4xl font-extrabold font-heading leading-tight">
+                Open School Education <br>
+                <span class="text-slate-300 text-2xl md:text-3xl font-semibold">Open 10th &amp; Open Inter</span>
+              </h3>
+              <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                Star Children High School offers flexible, government-recognized pathways through the <strong class="text-white">Telangana Open School Society (TOSS)</strong>, designed for students seeking one-sitting schooling options.
+              </p>
+              
+              <!-- Features / Lists -->
+              <div class="grid md:grid-cols-2 gap-4 pt-2">
+                <div class="flex items-center gap-3 bg-white/5 p-3 rounded-2xl border border-white/5">
+                  <div class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center font-bold">
                     <i class="fas fa-calendar-check text-xs"></i>
                   </div>
                   <div>
-                    <h5 class="font-bold text-slate-800 text-sm font-heading">OPEN 10th &amp; OPEN INTER</h5>
-                    <p class="text-slate-500 text-xs mt-0.5">Assistance for direct admission into Open SSC and Intermediate streams.</p>
+                    <h5 class="text-white font-bold text-xs font-heading">One Sitting Option</h5>
+                    <p class="text-slate-500 text-[10px]">Complete exams in a single attempt</p>
                   </div>
                 </div>
-
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20 mt-0.5">
-                    <i class="fas fa-bolt text-xs"></i>
+                <div class="flex items-center gap-3 bg-white/5 p-3 rounded-2xl border border-white/5">
+                  <div class="w-8 h-8 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center font-bold">
+                    <i class="fas fa-graduation-cap text-xs"></i>
                   </div>
                   <div>
-                    <h5 class="font-bold text-slate-800 text-sm font-heading">ONE SITTING</h5>
-                    <p class="text-slate-500 text-xs mt-0.5">Save valuable academic time by clearing all board examinations in one sitting.</p>
+                    <h5 class="text-white font-bold text-xs font-heading">Govt. Recognized (TOSS)</h5>
+                    <p class="text-slate-500 text-[10px]">Valid for higher education &amp; jobs</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20 mt-0.5">
-                    <i class="fas fa-building-columns text-xs"></i>
-                  </div>
-                  <div>
-                    <h5 class="font-bold text-slate-800 text-sm font-heading">Affiliated Boards</h5>
-                    <ul class="text-slate-500 text-xs mt-1 space-y-1 list-decimal list-inside">
-                      <li>Telangana Open School Society (TOSS)</li>
-                      <li>National Institute of Open Schooling (NIOS)</li>
-                    </ul>
-                  </div>
-                </div>
+            <!-- Right Groups Box -->
+            <div class="lg:col-span-5 w-full bg-white/5 p-6 rounded-3xl border border-white/10 backdrop-blur-md space-y-4">
+              <div class="text-center space-y-1">
+                <span class="text-primary font-bold text-xs tracking-widest uppercase">Available Streams</span>
+                <h4 class="text-white text-xl font-bold font-heading">Intermediate (Inter) Groups</h4>
+              </div>
+              
+              <div class="flex flex-wrap gap-2 justify-center">
+                <span class="bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors duration-200 border border-white/5">MPC</span>
+                <span class="bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors duration-200 border border-white/5">BiPC</span>
+                <span class="bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors duration-200 border border-white/5">MEC</span>
+                <span class="bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors duration-200 border border-white/5">CEC</span>
+                <span class="bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors duration-200 border border-white/5">HEC</span>
+              </div>
 
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 border border-primary/30 mt-0.5">
-                    <i class="fas fa-book text-xs"></i>
-                  </div>
-                  <div>
-                    <h5 class="font-bold text-slate-800 text-sm font-heading">Intermediate Groups &amp; Streams</h5>
-                    <p class="text-slate-500 text-xs mt-0.5">
-                      Streams: <strong class="text-slate-700">MPC, BiPC, MEC, CEC &amp; HEC</strong> (English Medium / Telugu Medium) with <span class="bg-brandgreen/10 text-brandgreen px-2 py-0.5 rounded font-semibold text-[10px]">Guarantee Pass assistance</span>.
-                    </p>
-                  </div>
+              <div class="text-center text-xs text-slate-300 border-t border-white/10 pt-4 space-y-2">
+                <p>⚡ <strong class="text-white">Mediums:</strong> English Medium (EM) &amp; Telugu Medium (TM)</p>
+                <div class="inline-flex items-center gap-1.5 bg-brandgreen/20 text-brandgreen border border-brandgreen/30 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mt-1">
+                  <i class="fas fa-shield-halved"></i> Guarantee Pass Support
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Modern Placeholders Column -->
-          <div class="lg:col-span-5 space-y-4">
-            <div class="grid grid-cols-2 gap-4">
-              <!-- Large Placeholder Image (Left) -->
-              <div class="h-60 rounded-3xl overflow-hidden shadow-md border border-slate-200/50 group relative">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600" alt="Flexible Open Schooling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-zoom-in achievement-img">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none">
-                  <span class="text-white font-semibold text-xs">Flexible Study Programs</span>
-                </div>
+          <!-- ── Open School Education Gallery Images ── -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 border-t border-white/10 pt-8 relative z-10">
+            <!-- Image 1 -->
+            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-lg group cursor-zoom-in h-48 relative">
+              <img 
+                src="open_school_classroom.jpg" 
+                alt="Open School Classroom Guidance & Study Session" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 achievement-img"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-85 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-left pointer-events-none">
+                <span class="text-xs font-semibold text-primary uppercase tracking-wider">Classroom Guidance</span>
               </div>
-              
-              <!-- Two Stacked Placeholder Images (Right) -->
-              <div class="flex flex-col gap-4">
-                <div class="h-[7rem] rounded-3xl overflow-hidden shadow-md border border-slate-200/50 group relative">
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600" alt="Academic Success &amp; Exams" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-zoom-in achievement-img">
-                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
-                    <span class="text-white font-semibold text-[10px]">One Sitting Exams</span>
-                  </div>
-                </div>
-                <div class="h-[7rem] rounded-3xl overflow-hidden shadow-md border border-slate-200/50 group relative">
-                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600" alt="Online Learning Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-zoom-in achievement-img">
-                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
-                    <span class="text-white font-semibold text-[10px]">Digital Learning Support</span>
-                  </div>
-                </div>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-lg group cursor-zoom-in h-48 relative">
+              <img 
+                src="open_school_students.jpg" 
+                alt="Open School Students & Faculty Cohort Group" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 achievement-img"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-85 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-left pointer-events-none">
+                <span class="text-xs font-semibold text-primary uppercase tracking-wider">TOSS Student Cohort</span>
+              </div>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-lg group cursor-zoom-in h-48 relative">
+              <img 
+                src="open_school_admission_form.jpg" 
+                alt="TOSS Candidates holding Admission Forms & Certificates" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 achievement-img"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-85 group-hover:opacity-90 transition-opacity duration-300 pointer-events-none"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-left pointer-events-none">
+                <span class="text-xs font-semibold text-primary uppercase tracking-wider">Successful TOSS Candidates</span>
               </div>
             </div>
           </div>
 
         </div>
       </div>
+
     </div>
   </section>
 
@@ -649,31 +657,15 @@
 
       <div class="grid lg:grid-cols-2 gap-12">
         
-        <!-- Card 1 - Principal -->
-        <div class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left fade-up">
-            <img src="principal.jpeg" alt="Principal G. SRINIVASA REDDY" class="w-36 h-36 rounded-2xl object-cover border border-slate-200 object-top flex-shrink-0 shadow-lg">
-          <div class="space-y-4">
-            <div>
-              <h3 class="text-2xl font-bold text-slate-900 font-heading flex items-baseline justify-center md:justify-start gap-1">
-                G. SRINIVASA REDDY 
-                <span class="text-slate-500 text-sm font-medium">(M.SC)</span>
-              </h3>
-              <p class="text-primary font-bold text-sm tracking-wider uppercase mt-1">Principal</p>
-            </div>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              "Welcome to Star Children High School. We focus on building a creative and disciplined academic atmosphere that enables students to discover their potential and achieve complete educational excellence."
-            </p>
-          </div>
-        </div>
-        <!-- Card 2 - Correspondent -->
-        <div class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left fade-up">
-           <img src="correspondent.jpeg" alt="Correspondent G. BHASKAR RAO" class="w-36 h-36 rounded-2xl object-cover border border-slate-200 object-top flex-shrink-0 shadow-lg" >
+        <!-- Card 1 - Correspondent -->
+        <div class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left fade-up group">
+           <img src="correspondent.jpeg" alt="Correspondent G. BHASKAR RAO" class="w-36 h-36 rounded-2xl object-cover border border-slate-200 object-top flex-shrink-0 shadow-lg achievement-img cursor-zoom-in hover:scale-105 transition-transform duration-300" >
             
           <div class="space-y-4">
             <div>
               <h3 class="text-2xl font-bold text-slate-900 font-heading flex items-baseline justify-center md:justify-start gap-1">
                 G. BHASKAR RAO 
-                <span class="text-slate-500 text-sm font-medium">(M.A)</span>
+                <span class="text-slate-500 text-sm font-medium">M.A</span>
               </h3>
               <p class="text-primary font-bold text-sm tracking-wider uppercase mt-1">Correspondent</p>
             </div>
@@ -683,9 +675,28 @@
           </div>
         </div>
 
+        <!-- Card 2 - Principal -->
+        <div class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left fade-up group">
+            <img src="principal.jpeg" alt="Principal G. SRINIVASA REDDY" class="w-36 h-36 rounded-2xl object-cover border border-slate-200 object-top flex-shrink-0 shadow-lg achievement-img cursor-zoom-in hover:scale-105 transition-transform duration-300">
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900 font-heading flex items-baseline justify-center md:justify-start gap-1">
+                G. SRINIVASA REDDY 
+                <span class="text-slate-500 text-sm font-medium">M.Sc.</span>
+              </h3>
+              <p class="text-primary font-bold text-sm tracking-wider uppercase mt-1">Principal</p>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              "Welcome to Star Children High School. We focus on building a creative and disciplined academic atmosphere that enables students to discover their potential and achieve complete educational excellence."
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
+
 
   <!-- ── Facilities Section ── -->
   <section id="facilities" class="py-28 relative z-10 bg-slate-50">
@@ -697,26 +708,6 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl p-8 hover:bg-slate-50 hover:border-primary/30 transition-all duration-300 flex gap-5 fade-up">
-          <div class="w-12 h-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20 animate-pulse">
-            <i class="fas fa-desktop text-lg"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 font-heading mb-2">Computer Lab</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Modern computing machines supporting structural programming lessons and digital tools.</p>
-          </div>
-        </div>
-
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl p-8 hover:bg-slate-50 hover:border-primary/30 transition-all duration-300 flex gap-5 fade-up">
-          <div class="w-12 h-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20">
-            <i class="fas fa-flask text-lg"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 font-heading mb-2">Science Lab</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Fully equipped chemistry, physics, and biology testing apparatus for active research.</p>
-          </div>
-        </div>
-
         <div class="bg-white border border-slate-100 shadow-sm rounded-3xl p-8 hover:bg-slate-50 hover:border-primary/30 transition-all duration-300 flex gap-5 fade-up">
           <div class="w-12 h-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20">
             <i class="fas fa-book text-lg"></i>
@@ -777,12 +768,15 @@
           <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0 border border-secondary/20">
             <i class="fas fa-star text-xl"></i>
           </div>
-          <div class="space-y-3 relative z-10">
+          <div class="space-y-3 relative z-10 flex-grow">
             <span class="inline-block bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">2025 &bull; Sainik School</span>
             <h3 class="font-bold text-xl text-slate-900 font-heading">Siddula Harsha Vardhan</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed mb-3">
               Secured admission in the prestigious <strong>Kadagu Sainik School, Karnataka</strong> — a prominent national success indicating outstanding physical and scientific capability.
             </p>
+            <div class="rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm max-w-sm group cursor-zoom-in">
+              <img src="sainik_school_admission.jpg" alt="Siddula Harsha Vardhan Sainik School Admission Announcement" class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-500 achievement-img">
+            </div>
           </div>
         </div>
 
@@ -791,12 +785,15 @@
           <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 border border-primary/20">
             <i class="fas fa-trophy text-xl"></i>
           </div>
-          <div class="space-y-3 relative z-10">
+          <div class="space-y-3 relative z-10 flex-grow">
             <span class="inline-block bg-primary text-darknavy text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">2024 &bull; Olympiad</span>
             <h3 class="font-bold text-xl text-slate-900 font-heading">Gummalla Jayalekha</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed mb-3">
               Honored with the <strong>District Level Second Prize in Mathematics Olympiad</strong>, showcasing outstanding analytical reasoning and dedication.
             </p>
+            <div class="rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm max-w-sm group cursor-zoom-in">
+              <img src="olympiad_award.jpg" alt="Gummalla Jayalekha receiving Ramanujan Award" class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-500 achievement-img">
+            </div>
           </div>
         </div>
 
@@ -868,6 +865,16 @@
         <!-- Image 1 -->
         <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="0">
           <div class="h-64 overflow-hidden relative">
+            <img src="school_hero.jpg" alt="Star Children High School Building & Campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+              <span class="text-white font-bold font-heading text-lg">School Campus & Building</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="1">
+          <div class="h-64 overflow-hidden relative">
             <img src="school image1.jpeg" alt="Cultural Program Gathering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
               <span class="text-white font-bold font-heading text-lg">Student Event Celebration</span>
@@ -875,8 +882,8 @@
           </div>
         </div>
 
-        <!-- Image 2 -->
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="1">
+        <!-- Image 3 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="2">
           <div class="h-64 overflow-hidden relative">
             <img src="school image 5.jpeg" alt="Republic Day Gift Distribution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -885,8 +892,8 @@
           </div>
         </div>
 
-        <!-- Image 3 -->
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="2">
+        <!-- Image 4 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="3">
           <div class="h-64 overflow-hidden relative">
             <img src="school image2.jpeg" alt="Staff & Management Team" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -895,8 +902,8 @@
           </div>
         </div>
 
-        <!-- Image 4 -->
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="3">
+        <!-- Image 5 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="4">
           <div class="h-64 overflow-hidden relative">
             <img src="WhatsApp Image 2026-06-17 at 2.06.06 PM.jpeg" alt="Ramanujan Award Felicitation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -905,8 +912,8 @@
           </div>
         </div>
 
-        <!-- Image 5 -->
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="4">
+        <!-- Image 6 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="5">
           <div class="h-64 overflow-hidden relative">
             <img src="WhatsApp Image 2026-06-17 at 9.36.43 AM.jpeg" alt="Academic Toppers Felicitation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -915,8 +922,8 @@
           </div>
         </div>
 
-        <!-- Image 6 -->
-        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="5">
+        <!-- Image 7 -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 group cursor-pointer fade-up gallery-item" data-index="6">
           <div class="h-64 overflow-hidden relative">
             <img src="picnic.jpg" alt="School Staff Outing Picnic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -997,6 +1004,7 @@
                 class="w-full bg-white border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 p-4 rounded-2xl text-slate-800 outline-none transition-all"
               >
                 <option value="">Select Class</option>
+                <option>Nursery</option>
                 <option>LKG</option>
                 <option>UKG</option>
                 <option>1st Class</option>
@@ -1009,8 +1017,6 @@
                 <option>8th Class</option>
                 <option>9th Class</option>
                 <option>10th Class</option>
-                <option>Open 10th (NIOS)</option>
-                <option>Open Intermediate (NIOS)</option>
               </select>
             </div>
 
@@ -1085,7 +1091,7 @@
             </button>
             <div class="faq-content overflow-hidden transition-all duration-500 max-h-0 opacity-0">
               <p class="text-slate-600 text-sm leading-relaxed pb-2 pt-3">
-                We provide complete schooling from Lower Kindergarten (LKG) to 10th Class under standard state syllabus. We also provide flex services for Open 10th and Open Intermediate via National Institute of Open Schooling (NIOS).
+                We provide complete schooling from Nursery to 10th Class under standard state syllabus.
               </p>
             </div>
           </div>
@@ -1153,7 +1159,7 @@
 
         <p class="mt-8 text-slate-500 text-xs text-center flex items-center justify-center gap-1">
           <i class="fas fa-info-circle text-primary"></i>
-          For transportation timing and custom routes call <a href="tel:9866806532" class="text-primary font-bold hover:underline">9866806532</a>
+          For transportation timing and custom routes call <a href="tel:9866806532" class="text-primary font-bold hover:underline">9866806532</a>, <a href="tel:7780668821" class="text-primary font-bold hover:underline">7780668821</a>
         </p>
 
       </div>
@@ -1181,8 +1187,8 @@
                 <i class="fas fa-phone"></i>
               </div>
               <div>
-                <span class="text-slate-500 text-xs block uppercase">Phone Number</span>
-                <a href="tel:9866806532" class="text-slate-800 hover:text-primary transition font-bold font-heading">9866806532</a>
+                <span class="text-slate-500 text-xs block uppercase">Phone Numbers</span>
+                <a href="tel:9866806532" class="text-slate-800 hover:text-primary transition font-bold font-heading">9866806532</a>, <a href="tel:7780668821" class="text-slate-800 hover:text-primary transition font-bold font-heading">7780668821</a>
               </div>
             </div>
 
@@ -1202,7 +1208,7 @@
               </div>
               <div>
                 <span class="text-slate-500 text-xs block uppercase">Campus Address</span>
-                <span class="text-slate-800 text-sm leading-relaxed block">Mahatma Gandhi Road (Ramalayam Temple), Near SKT Supermarket, Palwancha - 507115</span>
+                <span class="text-slate-800 text-sm leading-relaxed block">Market Area Behind Ramalayam Temple, Near Beraka Church, M.G ROAD , PALVONCHA</span>
               </div>
             </div>
 
@@ -1221,9 +1227,8 @@
           <div class="bg-white border border-slate-200/50 p-8 rounded-[2rem] shadow-sm text-center space-y-4">
             <h4 class="text-slate-800 font-bold font-heading">Follow Our Social Handles</h4>
             <div class="flex justify-center gap-6 text-2xl">
-              <a href="#" class="w-12 h-12 bg-slate-50 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:bg-[#1877F2] hover:text-white transition-all duration-300" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
               <a href="#" class="w-12 h-12 bg-slate-50 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white transition-all duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="w-12 h-12 bg-slate-50 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:bg-[#FF0000] hover:text-white transition-all duration-300" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://youtube.com/@starchildrenhighschool?si=tExl3efVVx0E9SkL" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-slate-50 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:bg-[#FF0000] hover:text-white transition-all duration-300" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
               <a id="socialWhatsappLink" href="https://wa.me/919866806532?text=Hello%20Star%20Children%20High%20School!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20admissions%2C%20school%20fees%2C%20and%20facilities.%20Please%20guide%20me.%20Thank%20you!" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-slate-50 border border-slate-200/50 rounded-full flex items-center justify-center text-slate-600 hover:bg-[#25D366] hover:text-white transition-all duration-300" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
@@ -1275,8 +1280,6 @@
         <div class="space-y-4">
           <h3 class="text-lg font-bold text-white font-heading">Facilities</h3>
           <ul class="space-y-2 text-sm text-slate-400">
-            <li>Computer Science Lab</li>
-            <li>Applied Physics &amp; Chemistry Lab</li>
             <li>Institutional Library</li>
             <li>School Transport Fleet</li>
             <li>Continuous CCTV Safety</li>
@@ -1289,11 +1292,11 @@
           <div class="space-y-3 text-sm text-slate-400">
             <p class="flex items-start gap-2">
               <i class="fas fa-map-pin text-primary mt-0.5 flex-shrink-0"></i>
-              <span>Mahatma Gandhi Road, near SKT Supermarket, Palwancha, Telangana - 507115</span>
+              <span>Market Area Behind Ramalayam Temple, Near Beraka Church, M.G ROAD , PALVONCHA</span>
             </p>
             <p class="flex items-center gap-2">
               <i class="fas fa-phone text-primary flex-shrink-0"></i>
-              <a href="tel:9866806532" class="hover:text-primary">9866806532</a>
+              <a href="tel:9866806532" class="hover:text-primary">9866806532</a>, <a href="tel:7780668821" class="hover:text-primary">7780668821</a>
             </p>
             <p class="flex items-center gap-2">
               <i class="fas fa-envelope text-primary flex-shrink-0"></i>
@@ -1720,6 +1723,7 @@
 
     let currentImgIndex = 0;
     const imagesData = [
+      { src: "school_hero.jpg", alt: "Star Children High School Building & Campus", caption: "School Campus & Building" },
       { src: "school image1.jpeg", alt: "Cultural Program Gathering", caption: "Student Event Celebration" },
       { src: "school image 5.jpeg", alt: "Republic Day Gift Distribution", caption: "Republic Day Gift Distribution" },
       { src: "school image2.jpeg", alt: "Staff & Management Team", caption: "Staff & Management Team" },
